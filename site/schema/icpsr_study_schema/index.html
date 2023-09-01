@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://shallcro.github.io/html_test/schema/icpsr_study_schema/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>ICPSR Curated Study Metadata Schema - ICPSR Metadata</title>
+    <title>Schema - ICPSR Metadata</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "ICPSR Curated Study Metadata Schema";
+        var mkdocs_page_name = "Schema";
         var mkdocs_page_input_path = "schema/icpsr_study_schema.md";
         var mkdocs_page_url = "/html_test/schema/icpsr_study_schema/";
       </script>
@@ -44,8 +44,218 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="" href="../icpsr_study_schema_v1.md">Schema</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Schema</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-version-required">1. Version         [Required]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-version-date-required">2. Version Date         [Required]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-original-release-date-optional">3. Original Release Date         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-study-title-required">4. Study Title         [Required]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-alternate-titles-optional">5. Alternate Titles         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#51-items">5.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-link-title-optional">6. Link Title         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-link-url-optional">7. Link Url         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-principal-investigators-required">8. Principal Investigators         [Required]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#81-items">8.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#811-name">8.1.1. Name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#812-affiliation">8.1.2. Affiliation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#813-order">8.1.3. Order</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-citation-optional">9. Citation         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-distributors-required">10. Distributors         [Required]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#101-items">10.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1011-name">10.1.1. Name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1012-location">10.1.2. Location</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-digital-object-identifier-doi-optional">11. Digital Object Identifier (DOI)         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-funding-sources-optional">12. Funding Sources         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#121-items">12.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1211-agency">12.1.1. Agency</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1212-grant-numbers">12.1.2. Grant Numbers</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1213-purpose">12.1.3. Purpose</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1214-order">12.1.4. Order</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-external-source-id-optional">13. External Source ID         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#131-items">13.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#14-summary-required">14. Summary         [Required]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#15-subject-terms-required">15. Subject Terms         [Required]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#151-items">15.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#16-geographic-coverage-areas-required">16. Geographic Coverage Areas         [Required]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#161-items">16.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#17-study-time-periods-required">17. Study Time Periods         [Required]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#171-items">17.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1711-start-date">17.1.1. Start Date</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1712-end-date">17.1.2. End Date</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1713-time-frame">17.1.3. Time Frame</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#18-collection-dates-optional">18. Collection Dates         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#181-items">18.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1811-start-date">18.1.1. Start Date</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1812-end-date">18.1.2. End Date</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#1813-time-frame">18.1.3. Time Frame</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#19-universe-optional">19. Universe         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#20-data-type-optional">20. Data Type         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#201-items">20.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#21-collection-notes-optional">21. Collection Notes         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#211-items">21.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#22-study-purpose-optional">22. Study Purpose         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#23-study-design-optional">23. Study Design         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#24-variable-description-optional">24. Variable Description         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#25-sampling-optional">25. Sampling         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#26-time-method-optional">26. Time Method         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#261-items">26.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#27-data-source-optional">27. Data Source         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#271-items">27.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#28-collection-mode-optional">28. Collection Mode         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#281-items">28.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#29-extent-of-processing-optional">29. Extent of Processing         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#291-items">29.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#30-weight-optional">30. Weight         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#31-response-rates-optional">31. Response Rates         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32-scales-optional">32. Scales         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33-units-of-observation-optional">33. Units of Observation         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#331-items">33.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#34-geographic-unit-optional">34. Geographic Unit         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#35-restrictions-optional">35. Restrictions         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#36-changes-to-collection-optional">36. Changes to Collection         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#361-items">36.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#3611-date">36.1.1. Date</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3612-note">36.1.2. Note</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#37-series-optional">37. Series         [Optional]</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#38-classifications-optional">38. Classifications         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#381-items">38.1. Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#39-filesets-optional">39. Filesets         [Optional]</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#391-items">39.1. Items</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#3911-number">39.1.1. Number</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3912-name">39.1.2. Name</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3913-sda-note">39.1.3. SDA Note</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -70,7 +280,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>ICPSR Curated Study Metadata Schema</li>
+      <li>Schema</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -1834,6 +2044,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../style/style_guide/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
